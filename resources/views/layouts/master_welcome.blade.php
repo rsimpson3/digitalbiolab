@@ -6,6 +6,7 @@
         @yield('title','The Digital Biolab')
     </title>
     <link href='/css/app.css' type='text/css' rel='stylesheet'>
+    <meta charset='utf-8'>
 </head>
 <body>
 	<header id="intro">
@@ -100,8 +101,8 @@
 		</div> <!-- Understandings -->
     </main>
 	
-	<footer>
-			
-	</footer>
+	 <footer>
+        <p>©2017 Robert Simpson • Digital BioLab Prototype • Harvard Medical School • DGMD E599 • ver4 </p>
+    </footer>
 </body>
 </html>

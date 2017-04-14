@@ -16,7 +16,9 @@ Route::get('/', function () {
 });
 
 # ----------------------------------------
-# Welcome & Game Play Information
+# About Information
 # ----------------------------------------
 
-// Route::get('/', 'WelcomeController@getIndex'); # Home
+Route::get('/about', function () {
+    return view('about');
+}); # About
