@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Database;
 
 class WelcomeController extends Controller {
 
@@ -12,7 +13,9 @@ class WelcomeController extends Controller {
     */
     public function getIndex() {
 
+		$tasks = DB::table('tasks')->get();
 
-        return view('welcome');
+		return $tasks;
+        // return view('welcome', compact('tasks'));
     }
 }
