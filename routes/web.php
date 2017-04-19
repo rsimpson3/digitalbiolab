@@ -1,32 +1,15 @@
 <?php
 
-// import Task class from model
-use App\Task; 
-
-
 //Route::get('/', 'WelcomeController@getIndex'); # Home
 
-Route::get('/tasks', function () {
+# -----------------------------------------
+# Tasks 
+# -----------------------------------------
 
-	// $tasks = DB::table('tasks')->latest()->get();
+Route::get('/tasks', 'TasksController@index'); 
 
-	$tasks = Task::all();
+Route::get('/tasks/{task}', 'TasksController@show'); 
 
-	return view('partials.index', compact('tasks'));
-
-});
-
-Route::get('/tasks/{task}', function ($id) {
-
-	
-	// $task = DB::table('tasks')->find($id);
-
-	$task = Task::find($id);
-
-
-	return view('partials.show', compact('task'));
-
-});
 
 # ----------------------------------------
 # About Information
