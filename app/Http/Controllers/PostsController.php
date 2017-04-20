@@ -26,6 +26,13 @@ class PostsController extends Controller
     public function store () 
     {
 
+    	// serverside validation required
+    	$this->validate(request(), [
+
+    		'title' => 'required',
+    		'body' => 'required'
+    		]);
+
     	// Save it to dbase
     	Post::create([
 
