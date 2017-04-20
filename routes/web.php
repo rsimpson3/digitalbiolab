@@ -1,6 +1,6 @@
 <?php
 
-//Route::get('/', 'WelcomeController@getIndex'); # Home
+Route::get('/', 'WelcomeController@getIndex'); # Home
 
 # -----------------------------------------
 # Tasks 
@@ -9,6 +9,20 @@
 Route::get('/tasks', 'TasksController@index'); 
 
 Route::get('/tasks/{task}', 'TasksController@show'); 
+
+Route::get('/post', 'PostsController@index');
+
+Route::get('/post/{post}', 'PostsController@show');
+
+# -----------------------------------------
+# Blogs 
+# -----------------------------------------
+
+Route::get('/blog', 'BlogsController@index');
+
+Route::get('/posts/create', 'PostsController@create');
+
+Route::post('/posts', 'PostsController@store');
 
 
 # ----------------------------------------

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+
+use App\Task;
+
 use Illuminate\Http\Request;
-use Illuminate\Database;
 
 class WelcomeController extends Controller {
 
@@ -13,9 +14,8 @@ class WelcomeController extends Controller {
     */
     public function getIndex() {
 
-		$tasks = DB::table('tasks')->get();
+		$tasks = Task::all();
 
-		return $tasks;
-        // return view('welcome', compact('tasks'));
+		return view('partials.index', compact('tasks'));
     }
 }

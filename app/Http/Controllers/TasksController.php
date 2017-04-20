@@ -17,11 +17,10 @@ class TasksController extends Controller
 		return view('partials.index', compact('tasks'));
     }
 
-    public function show($id)  // must accept id
+    public function show(Task $task)  // Task::find(wildcard)
     {
     	// $task = DB::table('tasks')->find($id);
-		$task = Task::find($id);
-
+		// $task = Task::find($id);
 
 		return view('partials.show', compact('task'));
     }
