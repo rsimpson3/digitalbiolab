@@ -1,7 +1,13 @@
-@extends('layouts.layout')
+@extends('layouts.layout_blog')
 
 @section ('content')
 
-	<h1>Here are some facts. </h1>
+	<div class="col-sm-8 blog-main">
+
+	<h1> {{ $post->title }} </h1>
+
+	{{ $post->body }}
+
+	</div>
 
 @endsection
