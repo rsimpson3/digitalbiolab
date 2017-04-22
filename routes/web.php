@@ -18,7 +18,7 @@ Route::get('/tasks/{task}', 'TasksController@show');
 # Dynamic Blogs Exercise
 # -----------------------------------------
 
-Route::get('/post', 'PostsController@index');
+Route::get('/post', 'PostsController@index')->name('home');
 
 Route::get('/posts/create', 'PostsController@create');
 
@@ -34,6 +34,13 @@ Route::post('/posts/{post}/comments', 'CommentsController@store');
 # User Registration
 # ----------------------------------------
 
+Route::get('/register', 'RegistrationController@create');
+
+Route::post('/register', 'RegistrationController@store');
+
+Route::get('/login', 'SessionsController@create');
+
+Route::get('/logout', 'SessionsController@destroy');
 
 # ----------------------------------------
 # About Information
