@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\User;
+
+use Illuminate\Support\Facades\Hash;
 
 class RegistrationController extends Controller
 {
@@ -12,7 +12,7 @@ class RegistrationController extends Controller
     public function create()
     {
 
-    	return view('sessions.create');
+    	return view('registration.create');
     }
 
     // store user data 
@@ -30,8 +30,15 @@ class RegistrationController extends Controller
     		]);
 
     	// Create and save user
+        // Encrypt passwords when sending to dbase
 
-    	$user = User::create(request(['name', 'email', 'password']));
+    	$user = User::create([
+
+            'name' =>request('name'),
+            'email' => request ('email'),
+            'password' => Hash::make(request('password'))
+
+        ]);
 
     	// Sign in w Auth facade
     	auth()->login($user);

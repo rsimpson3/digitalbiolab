@@ -2,12 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Post;
 
 class PostsController extends Controller
 {
+    
+    // constructor function
+    public function __construct()
+    {
+
+        $this->middleware('auth')->except(['index', 'show']);
+    }
+
+    // *** Any guest can see posts 
     public function index () 
     {
     	$posts = Post::latest()->get();
@@ -15,20 +22,25 @@ class PostsController extends Controller
     	return view('posts.index', compact('posts'));
     }//
 
+
+    // *** Any guest can see posts 
     public function show (Post $post) 
     {
 
         return view('posts.show', compact('post'));
     }
 
+
+    // *** Only signed in user
     public function create () 
     {
     	return view('posts.create');
     }
 
+
+    // *** Only signed in user
     public function store () 
     {
-
     	// serverside validation required
     	$this->validate(request(), [
 
@@ -36,14 +48,11 @@ class PostsController extends Controller
     		'body' => 'required'
     		]);
 
-    	// Save it to dbase
-    	Post::create([
+        auth()->user()->publish(
 
-    		'title' => request('title'),
-    		'body' => request('body')
+            new Post(request(['title', 'body']))
 
-    	]);
-
+        );
 
     	// then redirect
     	return redirect('/post');

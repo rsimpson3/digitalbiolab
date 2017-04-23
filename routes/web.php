@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/', 'WelcomeController@getIndex'); # Home
+//Route::get('/', 'WelcomeController@getIndex'); # Home
 
 # -----------------------------------------
 # Tasks 
@@ -38,9 +38,15 @@ Route::get('/register', 'RegistrationController@create');
 
 Route::post('/register', 'RegistrationController@store');
 
-Route::get('/login', 'SessionsController@create');
+
+# ----------------------------------------
+# User Session
+# ----------------------------------------
+Route::get('/login', 'SessionsController@create')->name('login');
 
 Route::get('/logout', 'SessionsController@destroy');
+
+Route::post('/login', 'SessionsController@store');
 
 # ----------------------------------------
 # About Information

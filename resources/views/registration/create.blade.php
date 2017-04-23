@@ -4,11 +4,19 @@
 
 	<div class="col-sm-8 blog-main">
 
-		<h1>Sign In</h1>
+		<h1>Register</h1>
 
-		<form method="POST" action="/login">
+		<form method="POST" action="/register">
 			
 			{{ csrf_field() }}
+
+			<div class="form-group">
+
+		    <label for="name">Name:</label>
+
+		    <input type="text" class="form-control" id="name" name="name" required>
+
+		  	</div>
 
 			<div class="form-group">
 
@@ -26,10 +34,17 @@
 
 		  	</div>
 
+		  	<div class="form-group">
+
+		    <label for="password_confirmation">Password Confirmation:</label>
+
+		    <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" required >
+
+		  	</div>
 
 		  	<div class="form-group"> 
 				
-				<button type="submit" class="btn btn-primary">Sign In</button>
+				<button type="submit" class="btn btn-primary">Register</button>
 
 		  	</div>
 
