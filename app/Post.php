@@ -2,6 +2,9 @@
 
 namespace App;
 
+// Import Carbon to filter dates 
+use Carbon\Carbon;
+
 // use Illuminate\Database\Eloquent\Model;
 // extends our model NOT Eloquent, already handled in Model.php
 
@@ -37,6 +40,25 @@ class Post extends Model
 		
 		//$this->comments()->create(compact('body'));
 
+	}
+
+	public function scopeFilter($query, $filters)
+	{
+
+		$posts = Post::latest();
+
+        if ($month = $filters['month']) {
+
+            // Convert month into number
+            $query->whereMonth('created_at', Carbon::parse($month)->month);
+        }
+
+        if ($year = $filters['year']) {
+
+            $query->whereYear('created_at', $year);
+        }
+
+        $posts = $posts->get();
 
 	}
 }

@@ -18,21 +18,15 @@ class PostsController extends Controller
     // *** Any guest can see posts 
     public function index () 
     {
-    	$posts = Post::latest();
+    	
+        $posts = Post::latest()
 
-        if ($month = request('month')) {
+            // send to method on Post model
+            ->filter(request(['month', 'year']))
 
-            // Convert month into number
-            $posts->whereMonth('created_at', Carbon::parse($month)->month);
-        }
+            ->get(); 
 
-        if ($year = request('year')) {
-
-            $posts->whereYear('created_at', $year);
-        }
-
-        $posts = $posts->get();
-
+        // Temporary > will move later
         $archives = Post::selectRaw('year(created_at) year, monthname (created_at) month, count(*) published')
             ->groupBy('year', 'month')
             ->orderByRaw('min(created_at) asc')
