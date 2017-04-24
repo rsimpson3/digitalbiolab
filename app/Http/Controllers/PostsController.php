@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use Carbon\Carbon;
 
 class PostsController extends Controller
 {
@@ -17,9 +18,28 @@ class PostsController extends Controller
     // *** Any guest can see posts 
     public function index () 
     {
-    	$posts = Post::latest()->get();
+    	$posts = Post::latest();
 
-    	return view('posts.index', compact('posts'));
+        if ($month = request('month')) {
+
+            // Convert month into number
+            $posts->whereMonth('created_at', Carbon::parse($month)->month);
+        }
+
+        if ($year = request('year')) {
+
+            $posts->whereYear('created_at', $year);
+        }
+
+        $posts = $posts->get();
+
+        $archives = Post::selectRaw('year(created_at) year, monthname (created_at) month, count(*) published')
+            ->groupBy('year', 'month')
+            ->orderByRaw('min(created_at) asc')
+            ->get()
+            ->toArray();
+
+    	return view('posts.index', compact('posts', 'archives'));
     }//
 
 
