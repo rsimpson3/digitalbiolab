@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Mail\Welcome;
 
 use Illuminate\Support\Facades\Hash;
 
@@ -42,6 +43,9 @@ class RegistrationController extends Controller
 
     	// Sign in w Auth facade
     	auth()->login($user);
+
+        // Send Welcome Email
+        \Mail::to($user)->send(new Welcome($user));
 
 
     	// Redirect to home page. 
