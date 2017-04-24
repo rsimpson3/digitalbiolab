@@ -26,14 +26,11 @@ class PostsController extends Controller
 
             ->get(); 
 
-        // Temporary > will move later
-        $archives = Post::selectRaw('year(created_at) year, monthname (created_at) month, count(*) published')
-            ->groupBy('year', 'month')
-            ->orderByRaw('min(created_at) asc')
-            ->get()
-            ->toArray();
+        // refactor > View Composer 
+        $archives = Post::archives();
 
-    	return view('posts.index', compact('posts', 'archives'));
+                                // remove local archives variable
+    	return view('posts.index', compact('posts'));
     }//
 
 
