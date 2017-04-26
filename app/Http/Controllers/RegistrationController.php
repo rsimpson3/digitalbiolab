@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use App\Mail\Welcome;
+use App\Http\Requests\RegistrationForm;
 
-use Illuminate\Support\Facades\Hash;
 
 class RegistrationController extends Controller
 {
@@ -17,36 +15,11 @@ class RegistrationController extends Controller
     }
 
     // store user data 
-	public function store()
+	public function store(RegistrationForm $form)
     {
-    	// Validate form
-    	$this->validate(request(), [
 
-    		'name' => 'required',
-
-    		'email' => 'required|email',
-
-    		'password' => 'required|confirmed'
-
-    		]);
-
-    	// Create and save user
-        // Encrypt passwords when sending to dbase
-
-    	$user = User::create([
-
-            'name' =>request('name'),
-            'email' => request ('email'),
-            'password' => Hash::make(request('password'))
-
-        ]);
-
-    	// Sign in w Auth facade
-    	auth()->login($user);
-
-        // Send Welcome Email
-        \Mail::to($user)->send(new Welcome($user));
-
+        // send form request to Form Object
+        $form->persist();
 
     	// Redirect to home page. 
     	return redirect()->home();
