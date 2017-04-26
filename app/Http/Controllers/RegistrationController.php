@@ -21,6 +21,8 @@ class RegistrationController extends Controller
         // send form request to Form Object
         $form->persist();
 
+        session()->flash('message', 'Thanks for signing up!');
+
     	// Redirect to home page. 
     	return redirect()->home();
     }
