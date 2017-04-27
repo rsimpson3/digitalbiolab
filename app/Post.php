@@ -34,7 +34,7 @@ class Post extends Model
 
     		'body' => $body,
     		'post_id' => $this->id,
-    		'user_id' => auth()->id
+    		'user_id' => auth()->id()
 
     	]);
 		
