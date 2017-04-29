@@ -1,9 +1,18 @@
 <?php
 
-//Route::get('/', 'WelcomeController@getIndex'); # Home
+Route::get('/', 'WelcomeController@getIndex'); # Home
+
+# ----------------------------------------
+# About Information
+# ----------------------------------------
+
+Route::get('/about', function () {
+    return view('about');
+}); # About
+
 
 # -----------------------------------------
-# Tasks 
+# Tasks - Practice routes & database setup
 # -----------------------------------------
 
 Route::get('/tasks', 'TasksController@index'); 
@@ -50,16 +59,9 @@ Route::get('/logout', 'SessionsController@destroy');
 
 Route::post('/login', 'SessionsController@store');
 
-# ----------------------------------------
-# About Information
-# ----------------------------------------
-
-Route::get('/about', function () {
-    return view('about');
-}); # About
 
 # ----------------------------------------
-# About Information
+# Debug
 # ----------------------------------------
 
 

@@ -1,14 +1,24 @@
 
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+// Digital Biolab Main Header font
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
 
 // Variables
 @import "variables";
 
 // Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
-// Partials
+// Digital Biolab Partials
+@import "mixins";           // JS course ver
+//@import "normalize";        // Updated v6.0.0
+//@import "styles-start";     // JS course ver
+@import "variables-custom"; // my variables
+
+//External Libraries
+
 
 // Laracasts > Jeffrey Web example
-@import "blog";
+@import "blog";     // works with bootstrap 4 alpha6

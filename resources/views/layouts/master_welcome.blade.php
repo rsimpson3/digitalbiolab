@@ -14,7 +14,6 @@
 			<div>
 				<h1>The Digital Biolab</h1>
 				<h2> Build and manage your AP<sup>®</sup> Biology Knowledge</h2>
-				@yield('mylist')
 
 			</div>
 		</article>

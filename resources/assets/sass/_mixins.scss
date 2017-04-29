@@ -1,0 +1,20 @@
+/* my mixins */
+
+/* sass-lang.com/guide */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-radius-top($radius-left, $radius-right) {
+  -webkit-border-top-left-radius: $radius-left;
+  -webkit-border-top-right-radius: $radius-right;
+     -moz-border-top-left-radius: $radius-left;
+     -moz-border-top-right-radius: $radius-right;
+	 -ms-border-top-left-radius: $radius-left;
+     -ms-border-top-right-radius: $radius-right;
+          border-top-left-radius: $radius-left;
+          border-top-right-radius: $radius-right;
+}

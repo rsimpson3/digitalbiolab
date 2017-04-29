@@ -12,10 +12,10 @@ class WelcomeController extends Controller {
     /**
     * Responds to requests to GET /
     */
+
     public function getIndex() {
 
-		$tasks = Task::all();
 
-		return view('partials.index', compact('tasks'));
+		return view('welcome');
     }
 }

@@ -1,0 +1,410 @@
+/* Border box declaration */
+
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: $font-primary;
+	background-color: #c69c6d;
+	font-size: 100%;
+}
+
+/* prevents font style flash */
+.wf-loading h1 {
+    font-family: electrolize, sans-serif;
+    visibility: hidden;
+  }
+.wf-active h1 {
+    visibility: visible;
+}
+
+/* 6 column layout, each col 186px with 12 px spacer */
+.wrapper {
+	width: 98%;
+	max-width: 1200px;      // 1176px with 12px margin 
+	margin: 0 auto;
+	float: none;
+}
+
+header {
+	width: 100%;
+	height: 100px; 
+	h1 {
+		padding: 0.8em 0 0 0;
+		margin: 0;
+		font-family: electrolize, sans-serif;
+	}
+	h2 {
+		font-style: italic;
+		font-size: 1em;
+		padding: 0 0 0 1em;
+	}
+	p {
+		float: right;
+		margin-right: 24px;
+		position: relative;
+		top: -50px;
+	}
+}
+
+nav {
+	margin-left: 12px;
+	margin-bottom: 1em;
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-top: 0.8em;
+	overflow: hidden;
+}
+nav li {
+	float: left;
+}
+
+nav a:link, nav a:visited {
+	display: block;
+	width: 90px;
+	margin-right: 0.4em;
+	padding: 0.2em 0.6em 0.2em 0.6em;
+	color: maroon;
+	background-color: #ffedd9;
+	text-decoration: none;
+	border: 2px solid brown;
+}
+
+nav a:hover {
+	border: 2px solid sienna;
+	background-color: pink; 
+}
+
+.big-ideas {
+	float: left;
+}
+
+.big-ideas div {
+	font-family: asap, sans-serif;
+	width: 50%;
+
+	h1 {
+		font-size: 2.0em;
+	}
+	h2 {
+		font-size: 4.0em;
+		position: relative;
+		top: -115px;
+	}
+	p { 
+		font-weight: bold;
+		text-align: center;
+		padding: 0 1em 1em 1em;
+		position: relative;
+		top: -100px;
+	}
+}
+
+.big-ideas div:nth-child(odd) {
+	h2 {
+		left: 80px;
+	}
+}
+
+.big-ideas div:nth-child(even) {
+	h2 {
+		left: 170px;
+	}
+}
+
+
+#bigidea1 {
+	background-color: green;
+	width: $bigidea-width-height;
+	height: $bigidea-width-height;
+	float: left;
+	clear: both;
+	h1 {
+		margin-left: 10px;
+	}
+}
+
+#bigidea2 {
+	background-color: blue;
+	width: $bigidea-width-height;
+	height: $bigidea-width-height;
+	float: left;
+	h1 {
+		text-align: right;
+		margin-right: 10px;
+	}
+}
+
+#bigidea3 {
+	background-color: purple;
+	width: $bigidea-width-height;
+	height: $bigidea-width-height;
+	float: left;
+	clear: both;
+	h1 {
+		margin-left: 10px;
+	}
+}
+
+#bigidea4 {
+	background-color: red;
+	width: $bigidea-width-height;
+	height: $bigidea-width-height;
+	float: left;
+	h1 {
+		text-align: right;
+		margin-right: 10px;
+	}
+}
+
+.viewer {
+	float: left;
+	width: 48%;
+	margin-left: 2.00000%;
+	h1 {
+		margin-top: 0;
+	}
+	p {
+		font-size: 0.9em;
+	}
+	ul {
+		margin: 0;
+	}
+
+}
+
+/* section {
+	clear: both;
+} */
+
+.row h1{
+	font-size: 1.3em;
+
+}
+
+.udsheader-1 {
+	background-color: $color-1;
+}
+
+.udsheader-2 {
+	background-color: $color-2;
+}
+
+.udsheader-3 {
+	background-color: $color-3;
+}
+
+.udsheader-4 {
+	background-color: $color-4;
+}
+
+.row-2 {
+	float: left;
+	@include border-radius(10px); 
+	border: 2px solid brown;
+}
+
+.row-2 > ul > li {               //selects only Enduring Understandings
+	@include border-radius-top(10px, 10px); 
+	padding: 0.5em;
+	margin: 0;
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: asap, sans-serif;
+}
+
+.row-2 ul {
+	list-style: none;
+	padding-left: 0px;      // removes indented margin from list
+	margin-left: 0;
+	* li {     						//Essential Knowledge statements
+		padding: 0.5em;
+		background-color: #c7b299;
+	}
+}
+
+
+/* Circle shapes - Enduring Understandings */
+
+.circle {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	padding: 0px;
+	margin: 0 5px 0 5px;
+	background-color: #fff;
+	@include border-radius(15px);
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.tile {
+	display: inline-block;
+	height: 30px;
+	width: 25px;
+	padding: 0px;
+	margin: 0 5px 0 5px;
+	background-color: #fff;
+	@include border-radius(10px);
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	float: left;
+}
+
+.floatleft {
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 4px;
+}
+
+.floatright {
+	float: right;
+	padding-left: 4px;
+	padding-bottom: 4px;
+}
+
+.headline {
+	font-family: asap, sans-serif;
+	font-size: 1.5em;
+	color: maroon;
+	padding-top: 0;
+}
+
+footer {
+	float: left;
+	clear: both;
+	margin-left: 12px;
+	p {
+		font-size: 0.8em;
+	}
+}
+
+/* Image Gallery - ericportis.com*/
+
+figure { margin: 0; }
+
+figure img { 
+	display: block; width: 100%; 
+}
+
+.gallery-1 {
+	margin: 12px;
+	padding: 6px;
+}
+.gallery-1 h1 { 
+	font-family: asap, sans-serif; 
+	margin: 0.125em; 
+	font-size: 2em;
+	margin: 0.5em; 
+	text-align: center; 
+}
+figure { 
+	padding: 1px; 
+}
+figcaption { 
+	display: block;
+	margin: 0;
+	text-align: center;
+	font-weight: bold; 
+	color: white; 
+	position: relative; 
+	top: -3em; 
+	text-shadow: 1px 1px 1px #000; 
+	height: 0; padding: 0; 
+	font-size: 1.125em; 
+}
+
+/* Style Gallery 2 using Sachin jQuery plugin */
+
+.gallery-2 h1 { 
+	font-family: asap, sans-serif; 
+	margin: 0.125em; 
+	font-size: 2em;
+	margin: 0.5em; 
+	text-align: center; 
+}
+
+.gallery ul {
+list-style: none outside none;
+padding-left: 0;
+}
+
+.gallery li {
+display: block;
+float: left;
+height: 113px;
+margin-bottom: 6px;
+margin-right: 6px;
+width: 150px;
+}
+.gallery li a {
+height: 113px;
+width: 150px;
+}
+.gallery li a img {
+max-width: 150px;
+}
+
+@media (min-width: 36em) {
+	figure { 
+		display: block;
+		float: left;
+		width: 33.33333%;
+		}
+}
+
+@media only screen and (max-width: 479px) {
+	header {
+		height: 150px;
+		p {
+			top: 0;
+			left: 1.5em;
+		}
+	}
+
+	.big-ideas div {
+	font-family: asap, sans-serif;
+	width: 18.1875em;
+	h1 {
+		font-size: 1.5em;
+	}
+	h2 {
+		font-size: 2.0em;
+		position: relative;
+		top: -80px;
+		padding: 0;
+	}
+	p { 
+		font-weight: bold;
+		text-align: center;
+		padding: 0 1em 1em 1em;
+		position: relative;
+		top: -50px;
+		}
+	}
+
+	nav li {            //change nav to vertical
+		display: block;
+	}
+
+	.viewer {
+		width: 18.1875em;
+	}
+}
+
