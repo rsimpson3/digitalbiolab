@@ -1,18 +1,7 @@
-/* Border box declaration */
-
-html {
-  box-sizing: border-box;
-}
-/* inherit border-box on all elements in the universe and before and after */
-*, 
-*:before, 
-*:after {
-  box-sizing: inherit;
-}
 
 body {
 	font-family: $font-primary;
-	background-color: #c69c6d;
+	background-color: lighten(#c69c6d, 30);
 	font-size: 100%;
 }
 
@@ -57,6 +46,7 @@ header {
 nav {
 	margin-left: 12px;
 	margin-bottom: 1em;
+	@include clearfix;
 
 }
 
@@ -68,11 +58,11 @@ nav ul {
 	overflow: hidden;
 }
 nav li {
-	float: left;
+	//float: left;
 }
 
 nav a:link, nav a:visited {
-	display: block;
+	display: inline-block;
 	width: 90px;
 	margin-right: 0.4em;
 	padding: 0.2em 0.6em 0.2em 0.6em;
@@ -85,6 +75,10 @@ nav a:link, nav a:visited {
 nav a:hover {
 	border: 2px solid sienna;
 	background-color: pink; 
+}
+
+#wrapper {
+	@include clearfix;
 }
 
 .big-ideas {
@@ -102,6 +96,7 @@ nav a:hover {
 		font-size: 4.0em;
 		position: relative;
 		top: -115px;
+		font-weight: bold;
 	}
 	p { 
 		font-weight: bold;
@@ -126,7 +121,7 @@ nav a:hover {
 
 
 #bigidea1 {
-	background-color: green;
+	background-color: $color-1;
 	width: $bigidea-width-height;
 	height: $bigidea-width-height;
 	float: left;
@@ -137,18 +132,17 @@ nav a:hover {
 }
 
 #bigidea2 {
-	background-color: blue;
+	background-color: $color-2;
 	width: $bigidea-width-height;
 	height: $bigidea-width-height;
 	float: left;
 	h1 {
-		text-align: right;
 		margin-right: 10px;
 	}
 }
 
 #bigidea3 {
-	background-color: purple;
+	background-color: $color-3;
 	width: $bigidea-width-height;
 	height: $bigidea-width-height;
 	float: left;
@@ -159,12 +153,11 @@ nav a:hover {
 }
 
 #bigidea4 {
-	background-color: red;
+	background-color: $color-4;
 	width: $bigidea-width-height;
 	height: $bigidea-width-height;
 	float: left;
 	h1 {
-		text-align: right;
 		margin-right: 10px;
 	}
 }
