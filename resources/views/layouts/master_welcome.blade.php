@@ -13,10 +13,10 @@
 <body>
 	<div class="container">
 		<header id="intro">
-			<article class="fullheight">
+			<article>
 				<div>
-					<div class="display-2"> 
-						<h1>The Digital Biolab</h1> 
+					<div > 
+						<h1 class="display-4">The Digital Biolab</h1> 
 					</div>
 					<h2> Build and manage your AP<sup>®</sup> Biology Knowledge</h2>
 
@@ -27,10 +27,12 @@
 	  			<div class="navbar">
 					<div class="brand"><a href="#welcome"><span>Home</span></a></div>
 	    				<ul>
+	    					<li><a class="icon about" href="#about"><span>About</span></a></li>
 	    					<li><a class="icon bigideas" href="#bigideas"><span>Big Ideas</span></a></li>
 	    					<li><a class="icon wheelofvernier" href="#wheelofvernier"><span>Wheel of Vernier Game</span></a></li>
 	    					<li><a class="icon inquiry" href="#inquiry"><span>Inquiry</span></a></li>
 	    					<li><a class="icon labdata" href="#labdata"><span>Lab Data</span></a></li>
+	    					<li><a class="icon login" href="#login"><span>Login</span></a></li>
 	    				</ul>
 	  			</div>
 	  		</nav>
@@ -62,7 +64,7 @@
 	    		</article>
 	    	</div> <!-- Big Ideas Viewer-->
 
-	  		<div class="scene" id="intro">
+	  		<div class="container" id="intro">
 	    		<article class="heading">
 	    			<h1> My Understanding of Biology Standards </h1>
 	    			<p> Use the interactive biology standards viewer to see the relationship of the four major Big Ideas grouped by <em>Enduring Understandings</em>. Under each Enduring Understanding are sub groups containing <em>Essential Knowledge Statements</em>. Each statement is preceeded by an assessment tile indicating your level of understanding. Tiles are white by default. Tiles become darker in color and borders become thicker as you demonstrate your understanding.  
@@ -71,7 +73,7 @@
 					</p>
 				</article> 
 			</div> <!-- introduction -->
-			<div class="scene" id="Understandings">
+			<div class="container" id="Understandings">
 				<article id="udsheader">
 					<section id="bi-1-ud">
 						<h1>1 Enduring Understandings</h1>
