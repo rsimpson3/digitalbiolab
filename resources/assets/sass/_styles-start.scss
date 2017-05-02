@@ -1,7 +1,7 @@
 
 body {
-	font-family: $font-primary;
-	background-color: lighten(#c69c6d, 30);
+	//font-family: geneva;
+	background-color: lighten(#c69c6d, 35);
 	font-size: 100%;
 	color: black;
 }
@@ -22,9 +22,10 @@ header {
 	h1 {
 		padding: 0.8em 0 0 0;
 		margin: 0;
-		font-family: electrolize, sans-serif;
+		font-family: $font-maintitle;
 	}
 	h2 {
+		font-family: $font-maintitle;
 		font-style: italic;
 		font-size: 1em;
 		padding: 0 0 0 1em;
@@ -35,6 +36,7 @@ header {
 		//position: relative;
 		//top: -50px;
 	}
+	@include clearfix;
 }
 
 // nav {
@@ -110,8 +112,8 @@ header {
 
 #bigidea1 {
 	background-color: $color-1;
-	width: $bigidea-width-height;
-	height: $bigidea-width-height;
+	//width: $bigidea-width-height;
+	//height: $bigidea-width-height;
 	//float: left;
 	//clear: both;
 	h1 {
@@ -121,8 +123,8 @@ header {
 
 #bigidea2 {
 	background-color: $color-2;
-	width: $bigidea-width-height;
-	height: $bigidea-width-height;
+	//width: $bigidea-width-height;
+	//height: $bigidea-width-height;
 	//float: left;
 	h1 {
 		margin-right: 10px;
@@ -131,8 +133,8 @@ header {
 
 #bigidea3 {
 	background-color: $color-3;
-	width: $bigidea-width-height;
-	height: $bigidea-width-height;
+	//width: $bigidea-width-height;
+	//height: $bigidea-width-height;
 	//float: left;
 	//clear: both;
 	h1 {
@@ -142,8 +144,8 @@ header {
 
 #bigidea4 {
 	background-color: $color-4;
-	width: $bigidea-width-height;
-	height: $bigidea-width-height;
+	//width: $bigidea-width-height;
+	//height: $bigidea-width-height;
 	//float: left;
 	h1 {
 		margin-right: 10px;
@@ -323,50 +325,50 @@ width: 150px;
 max-width: 150px;
 }
 
-@media (min-width: 36em) {
-	figure { 
-		display: block;
-		float: left;
-		width: 33.33333%;
-		}
-}
+// @media (min-width: 36em) {
+// 	figure { 
+// 		display: block;
+// 		float: left;
+// 		width: 33.33333%;
+// 		}
+// }
 
-@media only screen and (max-width: 479px) {
-	header {
-		height: 150px;
-		p {
-			top: 0;
-			left: 1.5em;
-		}
-	}
+// @media only screen and (max-width: 479px) {
+// 	header {
+// 		height: 150px;
+// 		p {
+// 			top: 0;
+// 			left: 1.5em;
+// 		}
+// 	}
 
-	.big-ideas div {
-	font-family: asap, sans-serif;
-	width: 18.1875em;
-	h1 {
-		font-size: 1.5em;
-	}
-	h2 {
-		font-size: 2.0em;
-		position: relative;
-		top: -80px;
-		padding: 0;
-	}
-	p { 
-		font-weight: bold;
-		text-align: center;
-		padding: 0 1em 1em 1em;
-		position: relative;
-		top: -50px;
-		}
-	}
+// 	.big-ideas div {
+// 	font-family: asap, sans-serif;
+// 	width: 18.1875em;
+// 	h1 {
+// 		font-size: 1.5em;
+// 	}
+// 	h2 {
+// 		font-size: 2.0em;
+// 		position: relative;
+// 		top: -80px;
+// 		padding: 0;
+// 	}
+// 	p { 
+// 		font-weight: bold;
+// 		text-align: center;
+// 		padding: 0 1em 1em 1em;
+// 		position: relative;
+// 		top: -50px;
+// 		}
+// 	}
 
-	nav li {            //change nav to vertical
-		display: block;
-	}
+// 	nav li {            //change nav to vertical
+// 		display: block;
+// 	}
 
-	.viewer {
-		width: 18.1875em;
-	}
-}
+// 	.viewer {
+// 		width: 18.1875em;
+// 	}
+// }
 
