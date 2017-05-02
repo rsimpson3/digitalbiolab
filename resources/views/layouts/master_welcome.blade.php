@@ -38,28 +38,27 @@
 	  		<div class="container">
 				<div class="row"> 
 					<div class="col-6"> 
-				  		<div class="row"> 
+				  		<div class="row" id="bigideas"> 
 				  		<!-- Big Ideas 4 quadrant viewer -->
-				  		{{-- <div class="scene" id="bigideas"> --}}
-							<section class="col-6" id="bigidea1">
-								<h1 class="text-left">Big Idea</h1>
-								<h2 class="text-left display-3">1</h2>
+							<section class="col-6" id="bigidea1">		
+								<h1 class="float-left"> Big<br>Idea</h1>
+								<h2 class="display-3">1</h2>
 								<p><strong>The process of evolution drives the diversity and unity of life.</strong></p>
 							</section>
 				    		<section class="col-6" id="bigidea2">
-				    			<h1 class="text-right">Big Idea</h1>
-								<h2 class="text-right display-3">2</h2>
-								<p><strong> Biological systems utilize free energy and molecular building blocks to grow, to reproduce and to maintain dynamic homeostasis.</strong></p>
+					    			<h1 class="float-right">Big<br>Idea</h1>
+									<h2 class="display-3 text-right">2</h2>
+									<p><strong> Biological systems utilize free energy and molecular building blocks to grow, to reproduce and to maintain dynamic homeostasis.</strong></p>	
 				    		</section>
-				    		<div class="w-100"></div>
-				    		<section class="col" id="bigidea3">
-				    			<h1 class="text-left">Big Idea</h1>
-								<h2 class="text-left display-3">3</h2>
+				    		<div class="w-100"></div>  
+				    		<section class="col-6" id="bigidea3">
+				    			<h1 class="float-left">Big<br>Idea</h1>
+								<h2 class="display-3">3</h2>
 								<p><strong>Living systems store, retrieve, transmit and respond to information essential to life processes.</strong></p>
 				    		</section>
-					    	<section  class="col" id="bigidea4">
-					    		<h1 class="text-right">Big Idea</h1>
-								<h2 class="text-right display-3">4</h2>
+					    	<section  class="col-6" id="bigidea4">
+					    		<h1 class="float-right">Big<br>Idea</h1>
+								<h2 class="display-3 text-right">4</h2>
 								<p><strong>Biological systems interact, and these systems and their interactions possess complex properties.</strong></p>
 					    	</section>
 					    </div> <!-- row Big Ideas-->

@@ -6,16 +6,6 @@ body {
 	color: black;
 }
 
-/* prevents font style flash */
-// .wf-loading h1 {
-//     font-family: electrolize, sans-serif;
-//     visibility: hidden;
-//   }
-// .wf-active h1 {
-//     visibility: visible;
-// }
-
-
 header {
 	margin-bottom: 1em;
 	h1 {
@@ -30,85 +20,35 @@ header {
 		padding: 0 0 0 1em;
 	}
 	p {
-		//float: right;
 		margin-right: 24px;
-		//position: relative;
-		//top: -50px;
 	}
-	@include clearfix;
+	
 }
 
+#bigideas {
 
-// nav {
-// 	margin-left: 12px;
-// 	margin-bottom: 1em;
-// 	//@include clearfix;
+	font-family: asap, sans-serif;
 
-// }
+	section h1,h2 {
+		
+		font-weight: bold;
+	}
 
-// nav ul {
-// 	margin: 0;
-// 	padding: 0;
-// 	list-style: none;
-// 	padding-top: 0.8em;
-// 	//overflow: hidden;
-// }
-// nav li {
-// 	float: left;
-// }
-
-// nav a:link, nav a:visited {
-// 	//display: inline-block;
-// 	width: 90px;
-// 	margin-right: 0.4em;
-// 	padding: 0.2em 0.6em 0.2em 0.6em;
-// 	color: maroon;
-// 	background-color: #ffedd9;
-// 	text-decoration: none;
-// 	border: 2px solid brown;
-// }
-
-// nav a:hover {
-// 	border: 2px solid sienna;
-// 	background-color: pink; 
-// }
-
-
-// #big-ideas div {
-// 	font-family: asap, sans-serif;
-// 	width: 30%;
-
-// 	h1 {
-// 		font-size: 3.0em;
-// 	}
-// 	h2 {
-// 		font-size: 2.0em;
-// 		position: relative;
-// 		top: -115px;
-// 		font-weight: bold;
-// 	}
-// 	p { 
-// 		font-weight: bold;
-// 		text-align: center;
-// 		font-size: 1.5em;
-// 		padding: 1em 1em 1em 1em;
-// 		//position: relative;
-// 		top: -100px;
-// 	}
-// }
+ }
 
 
 #bigidea1 {
 	background-color: $color-1;
 	border: solid 1px $main-bg-color;
-
 	//width: $bigidea-width-height;
 	//height: $bigidea-width-height;
-	//float: left;
-	//clear: both;
+
 	h1 {
-		margin-left: 10px;
+		padding-top: 5px;
+		font-size: 2.0em;
+		margin-right: 1px;
 	}
+	
 }
 
 #bigidea2 {
@@ -116,41 +56,49 @@ header {
 	border: solid 1px $main-bg-color;
 	//width: $bigidea-width-height;
 	//height: $bigidea-width-height;
-	//float: left;
 	h1 {
-		margin-right: 10px;
+		padding-top: 5px;
+		font-size: 2.0em;
+		margin-left: 10px;
 	}
+	
 }
 
 #bigidea3 {
 	background-color: $color-3;
 	border: solid 1px $main-bg-color;
-
 	//width: $bigidea-width-height;
 	//height: $bigidea-width-height;
-	//float: left;
-	//clear: both;
+	
 	h1 {
-		margin-left: 10px;
+		padding-top: 5px;
+		font-size: 2.0em;
+		margin-right: 10px;
 	}
 }
 
 #bigidea4 {
 	background-color: $color-4;
 	border: solid 1px $main-bg-color;
-
 	//width: $bigidea-width-height;
 	//height: $bigidea-width-height;
-	//float: left;
+
 	h1 {
-		margin-right: 10px;
+		padding-top: 5px;
+		font-size: 2.0em;
+		margin-left: 10px;
 	}
 }
 
+/* Standards Viewer */
 
 .row h1{
 	font-size: 1.3em;
 
+}
+
+article p {
+	font-size: 0.8em;
 }
 
 .udsheader-1 {
@@ -246,8 +194,7 @@ header {
 }
 
 footer {
-	//float: left;
-	//clear: both;
+
 	margin-left: 12px;
 	p {
 		font-size: 0.8em;
