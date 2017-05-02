@@ -16,6 +16,8 @@
         </ul>
     </nav>
     <main>
+        <p> The Digital BioLab prototype is designed to help Hinton Scholar students manage their learning of AP<sup>®</sup> Biology. The mobile app takes advantage of student owned mobile devices. The prototype consists of a tablet optimized dashboard app and a mobile app that connects students to their data, peers and instructors.
+        </p>
         <p>
         <img class="floatleft" src="images/main/digital_biolab-4_320px.jpg" alt="Students collaborate using a tablet microscopy setup.">The Hinton Scholars Advanced Placement (AP) Biology program seeks to build upon several innovations that were piloted over the course of the last 2 years working with AP Biology classes from four Boston Public Schools. We explored changes to instructional practice with three key innovations 1) a <a href="http://hinton.harvardmedk12.wikispaces.net/">wiki environment</a> for sharing curriculum resources that increased communication between students and tutors and afforded rapid sharing of digitized laboratory data, 2) integration of digital probeware and instrumentation into four AP Biology lab sessions, 3) assessment of student understanding of major AP Biology themes and science practices using the nearpod application (app). Piloting these new innovations have helped create a 21st century science learning environment, provided practical insights on implementing <a href="http://www.nextgenscience.org/next-generation-science-standards">Next Generation Science Standards </a>and assisted educators with new instructional strategies adapted for the AP Biology curriculum redesign. 
         </p>

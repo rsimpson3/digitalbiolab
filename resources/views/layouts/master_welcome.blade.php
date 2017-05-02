@@ -11,7 +11,7 @@
 
 
 <body>
-	<div class="container">
+	<div class="container main-header">
 		<header id="intro">
 			<article>
 				<div>
@@ -23,20 +23,17 @@
 				</div>
 			</article>
 
-			<nav id="nav">
-	  			<div class="navbar">
-					<div class="brand"><a href="#welcome"><span>Home</span></a></div>
-	    				<ul>
-	    					<li><a class="icon about" href="#about"><span>About</span></a></li>
-	    					<li><a class="icon bigideas" href="#bigideas"><span>Big Ideas</span></a></li>
-	    					<li><a class="icon wheelofvernier" href="#wheelofvernier"><span>Wheel of Vernier Game</span></a></li>
-	    					<li><a class="icon inquiry" href="#inquiry"><span>Inquiry</span></a></li>
-	    					<li><a class="icon labdata" href="#labdata"><span>Lab Data</span></a></li>
-	    					<li><a class="icon login" href="#login"><span>Login</span></a></li>
-	    				</ul>
-	  			</div>
-	  		</nav>
+			<ul class="nav nav-pills flex-column flex-sm-row">
+				<li class="nav-item"><a  class="nav-link active" href="#home"><span>Home</span></a> </li>
+				<li class="nav-item"><a  class="nav-link" href="#about"><span>About</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="#bigideas"><span>Big Ideas</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="#wheelofvernier"><span>Wheel of Vernier Game</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="#inquiry"><span>Inquiry</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="#labdata"><span>Lab Data</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="#login"><span>Login</span></a></li>
+			</ul>
 		</header> 
+	</div>  {{-- Container header --}}
 		<main>
 	  		<div class="container">
 				<div class="row"> 
@@ -72,8 +69,6 @@
 			    		<article class="heading">
 			    			<h1> My Understanding of Biology Standards </h1>
 			    			<p> Use the interactive biology standards viewer to see the relationship of the four major Big Ideas grouped by <em>Enduring Understandings</em>. Under each Enduring Understanding are sub groups containing <em>Essential Knowledge Statements</em>. Each statement is preceeded by an assessment tile indicating your level of understanding. Tiles are white by default. Tiles become darker in color and borders become thicker as you demonstrate your understanding.  
-							</p>
-							<p> The Digital BioLab prototype is designed to help Hinton Scholar students manage their learning of AP<sup>®</sup> Biology. The mobile app takes advantage of student owned mobile devices. The prototype consists of a tablet optimized dashboard app and a mobile app that connects students to their data, peers and instructors.
 							</p>
 						</article> 
 						<article id="udsheader">
@@ -114,6 +109,6 @@
 		 <footer>
 	        <p>©2017 Robert Simpson • Digital BioLab Prototype • Harvard Medical School • DGMD E599 • ver4 </p>
 	    </footer>
-	</div>  <!-- Container -->
+	
 </body>
 </html>
