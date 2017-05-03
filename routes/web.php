@@ -14,6 +14,9 @@ Route::get('/gallery-1', function () {
     return view('/labs/index-1');
 }); # Gallery 1
 
+Route::get('/gallery-2', function () {
+    return view('/labs/index-2');
+}); # Gallery 2
 
 # -----------------------------------------
 # Tasks - Practice routes & database setup
@@ -24,7 +27,6 @@ Route::get('/tasks', 'TasksController@index');
 Route::get('/tasks/{task}', 'TasksController@show'); 
 
 // Route::get('/post', 'PostsController@index');
-
 
 
 # -----------------------------------------
