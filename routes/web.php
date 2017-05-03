@@ -3,12 +3,16 @@
 Route::get('/', 'WelcomeController@getIndex'); # Home
 
 # ----------------------------------------
-# About Information
+# Main Pages
 # ----------------------------------------
 
 Route::get('/about', function () {
     return view('about');
 }); # About
+
+Route::get('/gallery-1', function () {
+    return view('/labs/index-1');
+}); # Gallery 1
 
 
 # -----------------------------------------
