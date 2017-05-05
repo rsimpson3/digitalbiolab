@@ -25,12 +25,13 @@
 
 			<ul class="nav nav-pills flex-column flex-sm-row">
 				<li class="nav-item"><a  class="nav-link active" href="#home"><span>Home</span></a> </li>
-				<li class="nav-item"><a  class="nav-link" href="#about"><span>About</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="/about"><span>About</span></a></li>
 				<li class="nav-item"><a  class="nav-link" href="#bigideas"><span>Big Ideas</span></a></li>
-				<li class="nav-item"><a  class="nav-link" href="#wheelofvernier"><span>Wheel of Vernier Game</span></a></li>
-				<li class="nav-item"><a  class="nav-link" href="#inquiry"><span>Inquiry</span></a></li>
-				<li class="nav-item"><a  class="nav-link" href="#labdata"><span>Lab Data</span></a></li>
-				<li class="nav-item"><a  class="nav-link" href="#login"><span>Login</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="http://p4.digitalbiolab.me"><span>Wheel of Vernier Game</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="http://digitalbiolab.businesscatalyst.com/inquiry.html"><span>Inquiry</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="/gallery-1"><span>Lab Data 1</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="/gallery-2"><span>Lab Data 2</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="/login"><span>Login</span></a></li>
 			</ul>
 		</header> 
 	</div>  {{-- Container header --}}
