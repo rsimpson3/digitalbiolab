@@ -6,7 +6,7 @@
         @yield('title','The Digital Biolab')
     </title>
     <meta charset='utf-8'>
-    <link href='/css/app.css' type='text/css' rel='stylesheet'>
+    <link href='/css/app.css' type='text/css' rel='stylesheet'/>
     {{-- Yield any page specific CSS files or anything else you might want in the head --}}
     @yield('head')
     
