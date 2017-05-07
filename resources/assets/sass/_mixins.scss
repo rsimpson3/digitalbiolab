@@ -1,5 +1,13 @@
 /* my mixins */
 
+@mixin backImage($image) {
+  background: url($image) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} //backImage
+
 /* sass-lang.com/guide */
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
