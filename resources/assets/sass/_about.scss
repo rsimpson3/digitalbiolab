@@ -2,6 +2,35 @@
 header {
   .fullheight {
     @include backImage('../images/main/hinton_homescreen_wallpaper_1.png');
+
+    .abt-group {
+    	padding: 100px 0;
+
+    	h1 {
+    		color: $color-headline;
+    		font-size: 3em;
+    		font-weight: $heavy;
+    		text-align: center;
+    		text-shadow: -4px 4px 3px #999, 1px -1px 2px #000;
+
+    		//@include text-shadow($dark 0 0 20px);
+    	}
+
+    	h2 {
+
+    		display: block;
+    		color: $light;
+    		width: 60%;
+    		max-width: 500px;
+    		margin: 0 auto;
+    		text-align: center;
+    		border: 1px solid $light;
+    		margin-top: 15px;
+    		padding: 10px;
+    		background: rgba($dark, 0.5);  //sass feature
+    		font-size: 1.3em;
+    	}
+    }
   } //fullheight
 } //header 
 
