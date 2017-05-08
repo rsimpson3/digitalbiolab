@@ -10,6 +10,15 @@
   background-size: cover;
 } //backImage
 
+
+// @mixin backgdGradient {
+//     background: linear-gradient(
+//     $grDir,
+//     rgba(0,0,0, $opStart),
+//     rgba(0,0,0, $opEnd)
+//     );
+// }
+
 /* sass-lang.com/guide */
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;

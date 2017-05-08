@@ -1,4 +1,4 @@
-@extends('layouts.master_infopages')
+@extends('layouts.master_about')
 
 @section('title')
     Lab Image Gallery 2

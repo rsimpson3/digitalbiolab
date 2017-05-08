@@ -13,8 +13,7 @@ header {
     		text-align: center;
     		text-shadow: -4px 4px 3px #999, 1px -1px 2px #000;
 
-    		//@include text-shadow($dark 0 0 20px);
-    	}
+    	} // h1
 
     	h2 {
 
@@ -29,8 +28,14 @@ header {
     		padding: 10px;
     		background: rgba($dark, 0.5);  //sass feature
     		font-size: 1.3em;
-    	}
-    }
+    	} //h2
+    } //abt-group
   } //fullheight
 } //header 
+
+#about {
+
+	@include linear-gradient(to top, darken($main-bg-color, 20), lighten($orange, 20));
+	//@include background-image(linear-gradient(top, , blue));
+}
 

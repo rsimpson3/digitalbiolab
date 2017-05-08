@@ -6,7 +6,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container" id="about">
     <main>
         <p> The Digital BioLab web application was designed to help Hinton Scholar students manage their learning of AP<sup>®</sup> Biology. This mobile-friendly app takes advantage of student owned mobile devices. The design consists of a tablet optimized dashboard and a responsively enabled mobile version that connects students to their data, peers and instructors.
         </p>
