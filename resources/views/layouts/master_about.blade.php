@@ -15,7 +15,7 @@
         <header >
             <article class="headimg">
                 <div class="abt-group ">
-                    <h1>About The Digital BioLab</h1>
+                    <h1> @yield('title') <h1>
                     <h2>Build And Manage Your Biology Knowledge</h2>
                     <p>
                     
