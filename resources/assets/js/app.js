@@ -18,3 +18,13 @@ Vue.component('example', require('./components/Example.vue'));
 const app = new Vue({
     el: '#app'
 });
+
+/* Window height function > Responsive Web Design R. Villalobos - */ 
+  var wheight = $(window).height(); //get height of the window
+
+  $('.fullheight').css('height', wheight);
+
+  $(window).resize(function() {
+    var wheight = $(window).height(); //get height of the window
+    $('.fullheight').css('height', wheight);
+  }) //on resize

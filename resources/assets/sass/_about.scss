@@ -1,6 +1,6 @@
 
 header {
-  .fullheight {
+  .headimg {
     @include backImage('../images/main/hinton_homescreen_wallpaper_1.png');
 
     .abt-group {
@@ -36,6 +36,29 @@ header {
 #about {
 
 	@include linear-gradient(to top, darken($main-bg-color, 20), lighten($orange, 20));
-	//@include background-image(linear-gradient(top, , blue));
+	
 }
+
+article {
+	text-align: center;
+	.gallery {
+		img {
+			padding: 10px;
+			width: 200px;
+		} // img
+	} //gallery
+} //article
+
+#grp-photo {
+	//display: inline-block;
+    @include backImage('../images/main/digital_blab_orientation_grp_poster_1280px.jpg');
+
+    .content blockquote {
+    	width: 200px;
+    	@include border-radius(10px);
+    	background: rgba($light, .8);
+    	padding: 15px;
+    }
+} 
+
 

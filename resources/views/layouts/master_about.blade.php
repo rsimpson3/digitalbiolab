@@ -13,7 +13,7 @@
 </head>
 <body id="about">
         <header >
-            <article class="fullheight">
+            <article class="headimg">
                 <div class="abt-group ">
                     <h1>About The Digital BioLab</h1>
                     <h2>Build And Manage Your Biology Knowledge</h2>

@@ -14761,7 +14761,7 @@ module.exports = g;
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-
+/* WEBPACK VAR INJECTION */(function($) {
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -14781,6 +14781,17 @@ Vue.component('example', __webpack_require__(36));
 var app = new Vue({
   el: '#app'
 });
+
+/* Window height function > Responsive Web Design R. Villalobos - */
+var wheight = $(window).height(); //get height of the window
+
+$('.fullheight').css('height', wheight);
+
+$(window).resize(function () {
+  var wheight = $(window).height(); //get height of the window
+  $('.fullheight').css('height', wheight);
+}); //on resize
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ }),
 /* 12 */
