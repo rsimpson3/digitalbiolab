@@ -51,8 +51,8 @@ article #postit {
 // background-position: center top, center;
 // background-repeat: no-repeat, repeat-x;
 
-	@include background-image(url("/images/main/3mung_beans_closeup_circle.png"));
-	background-size: 225px;
+	@include background-image(url("/images/main/1mung_bean_hires_closeup.png"));
+	background-size: 270px;
 	background-repeat: no-repeat, repeat-x;
 	background-position: 105%; //right center, right;
 	padding-right: 175px;
