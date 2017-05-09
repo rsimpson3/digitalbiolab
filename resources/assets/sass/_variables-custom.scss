@@ -1,7 +1,14 @@
 /* Welcome Big Ideas variables */
 
-//$font-primary: Electrolize, Geneva, sans-serif;
 $font-maintitle: Electrolize, Geneva, sans-serif;
+$font-headline:  asap, sans-serif;
+
+$main-bg-color: lighten(#c69c6d, 35);
+$light: white;
+$dark: black;
+
+$orange: #ff9900;
+
 
 $color-1: green;
 $color-2: lighten(blue, 20);
@@ -10,6 +17,7 @@ $color-4: lighten(red, 20);
 
 $color-headline: white;
 
-$heavy    : 800;
+$bold 	:600;
+$heavy  :800;
 
 $bigidea-width-height: 200px;

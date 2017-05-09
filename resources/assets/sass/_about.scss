@@ -39,14 +39,33 @@ header {
 	
 }
 
-article {
+/*** Post-it Gallery   ***/
+article #postit {
+	margin-top: 10px;
+	padding-top: 10px;
 	text-align: center;
-	.gallery {
-		img {
-			padding: 10px;
-			width: 200px;
-		} // img
-	} //gallery
+	border: 2px solid darken($color-1, 10);
+	@include border-radius(20px);
+
+// 	@include background-image(url("/images/a.png"), url("images/b.png"));
+// background-position: center top, center;
+// background-repeat: no-repeat, repeat-x;
+
+	@include background-image(url("/images/main/3mung_beans_closeup_circle.png"));
+	background-size: 225px;
+	background-repeat: no-repeat, repeat-x;
+	background-position: 105%; //right center, right;
+	padding-right: 175px;
+
+	background-color: rgba(darken($color-1, 20), 0.3); //darken + opacity .5 
+	
+	img {
+		padding: 10px;
+		width: 150px;
+	} // img
+
+	
+	
 } //article
 
 #grp-photo {
