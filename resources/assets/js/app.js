@@ -19,6 +19,10 @@ const app = new Vue({
     el: '#app'
 });
 
+
+
+$(function() {
+
 /* Window height function > Responsive Web Design R. Villalobos - */ 
   var wheight = $(window).height(); //get height of the window
 
@@ -27,4 +31,29 @@ const app = new Vue({
   $(window).resize(function() {
     var wheight = $(window).height(); //get height of the window
     $('.fullheight').css('height', wheight);
-  }) //on resize
+  }); //on resize
+
+  console.log(wheight);
+
+//set up ScrollMagic
+  var controller = new ScrollMagic({
+    globalSceneOptions: {
+      triggerHook: "onLeave"  // see ScrollMagic doc
+    }
+  });
+
+  //Student quote animations
+  											//  control element by blockquote element
+  var quotetween = TweenMax.staggerFromTo('#grp-photo content blockquote', 1, 
+  	{ opacity: 0, scale: 0 },
+    { delay: 1, opacity: 1, scale: 1,
+        ease: Back.easeOut}); // Tweenmax has options
+
+  var scene = new ScrollScene({
+    triggerElement: '#grp-photo',
+    //offset: -topoffset-1
+  }).setTween(quotetween)
+    .addTo(controller);
+
+}); //on load
+

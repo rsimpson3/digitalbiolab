@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 // Digital Biolab Main Header font
 @import url('https://fonts.googleapis.com/css?family=Electrolize');
+@import "node_modules/font-awesome/scss/font-awesome";
 
 // Variables Bootstrap
 @import "variables";
@@ -14,27 +15,17 @@
 @import "node_modules/bourbon/app/assets/stylesheets/bourbon";
 
 
-//@import "node_modules/compass-mixins//bootstrap.scss";
-
-//Compass imports
-// @import "compass";
-// @import "compass/reset";
-// @import "compass/css3/box-shadow";
-// @import "compass/css3/text-shadow";
-
-
 // Digital Biolab Partials
 @import "mixins";           // JS course ver
 
 @import "variables-custom"; // my variables
 
 //External Libraries
-//@import "compass";
 
-// Laracasts > Jeffrey Web example
+
+// Laracasts > Jeffrey Way example
 @import "blog";     // works with bootstrap 4 alpha6
 @import "styles-start";// Override Bootstrap 4 styles
 @import "about"  //styling for about page
 
-//$fa-font-path: "../../../node_modules/font-awesome/fonts"; 
-//@import "node_modules/font-awesome/scss/font-awesome";
+

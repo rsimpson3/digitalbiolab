@@ -40,8 +40,8 @@
         <section class="fullheight" id="grp-photo">
             <div class="content">
                 <blockquote>I loved my tutor. She was extremely helpful, thoughtful, and considerate. Each time I needed help, she was there. Even when she saw me struggling and I did not say anything, she offered to help with a smile. </blockquote>
-                <blockquote>Having a lab where we followed the steps and then another lab that we would create ourselves was extremely helpful. It helped me analyze data and create graphs.</blockquote>
-                <blockquote>I really enjoyed the group sessions and talks we had to clarify things I didn't know. The fact that we could ask questions at any point made me feel comfortable with being unsure.</blockquote>
+                {{-- <blockquote>Having a lab where we followed the steps and then another lab that we would create ourselves was extremely helpful. It helped me analyze data and create graphs.</blockquote>
+                <blockquote>I really enjoyed the group sessions and talks we had to clarify things I didn't know. The fact that we could ask questions at any point made me feel comfortable with being unsure.</blockquote> --}}
             </div>
         </section>
         

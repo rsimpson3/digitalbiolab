@@ -14782,15 +14782,36 @@ var app = new Vue({
   el: '#app'
 });
 
-/* Window height function > Responsive Web Design R. Villalobos - */
-var wheight = $(window).height(); //get height of the window
+$(function () {
 
-$('.fullheight').css('height', wheight);
-
-$(window).resize(function () {
+  /* Window height function > Responsive Web Design R. Villalobos - */
   var wheight = $(window).height(); //get height of the window
+
   $('.fullheight').css('height', wheight);
-}); //on resize
+
+  $(window).resize(function () {
+    var wheight = $(window).height(); //get height of the window
+    $('.fullheight').css('height', wheight);
+  }); //on resize
+
+  console.log(wheight);
+
+  //set up ScrollMagic
+  var controller = new ScrollMagic({
+    globalSceneOptions: {
+      triggerHook: "onLeave" // see ScrollMagic doc
+    }
+  });
+
+  //Student quote animations
+  //  control element by blockquote element
+  var quotetween = TweenMax.staggerFromTo('#grp-photo content blockquote', 1, { opacity: 0, scale: 0 }, { delay: 1, opacity: 1, scale: 1,
+    ease: Back.easeOut }); // Tweenmax has options
+
+  var scene = new ScrollScene({
+    triggerElement: '#grp-photo'
+  }).setTween(quotetween).addTo(controller);
+}); //on load
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
