@@ -34,9 +34,7 @@ header {
 } //header 
 
 #about {
-
 	@include linear-gradient(to top, darken($main-bg-color, 20), lighten($orange, 20));
-	
 } // #about
 
 
@@ -87,4 +85,26 @@ article #postit {
     } // blockquote
 } // grp-photo
 
+/*** ScrollMagic Test    ***/
+#q1 {
+	//color: red;
+	//font-size: 0.6em;
+	//position: fixed;
+	width: 200px;
+}
+
+#container-test {
+	margin: 55vh 0;
+	padding: 50px;
+
+	outline: 1px dashed orange;
+}
+
+#block {
+	padding: 10px;
+
+	border: 1px solid black;
+
+	font-family: Helvetica;
+}
 

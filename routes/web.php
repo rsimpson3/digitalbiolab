@@ -18,6 +18,10 @@ Route::get('/gallery-2', function () {
     return view('/labs/index-2');
 }); # Gallery 2
 
+
+Route::get('/animate', function () {
+    return view('/animations/show');
+}); # Gallery 1
 # -----------------------------------------
 # Tasks - Practice routes & database setup
 # -----------------------------------------

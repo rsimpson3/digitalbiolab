@@ -20,40 +20,57 @@ const app = new Vue({
 });
 
 
+// TEST Tween ScrollMagic Tween Example
+TweenMax.to(".q2", 6, {left:600});
 
-$(function() {
+// $(function() {
+//   var controller = new ScrollMagic.Controller();
 
-/* Window height function > Responsive Web Design R. Villalobos - */ 
-  var wheight = $(window).height(); //get height of the window
+//   var blockTween = new TweenMax.to('#block', 1.5, {
+//     backgroundColor: 'red'
+//   });
 
-  $('.fullheight').css('height', wheight);
+//   var containerScene = new ScrollMagic.Scene({
+//       triggerElement: '#containerTest'
+//     })
+//     .setTween(blockTween)
+//     .addIndicators()
+//     .addTo(controller);
+// });
 
-  $(window).resize(function() {
-    var wheight = $(window).height(); //get height of the window
-    $('.fullheight').css('height', wheight);
-  }); //on resize
+// $(function() {
 
-  console.log(wheight);
+// /* Window height function > Responsive Web Design R. Villalobos - */ 
+//   var wheight = $(window).height(); //get height of the window
 
-//set up ScrollMagic
-  var controller = new ScrollMagic({
-    globalSceneOptions: {
-      triggerHook: "onLeave"  // see ScrollMagic doc
-    }
-  });
+//   $('.fullheight').css('height', wheight);
 
-  //Student quote animations
-  											//  control element by blockquote element
-  var quotetween = TweenMax.staggerFromTo('#grp-photo content blockquote', 1, 
-  	{ opacity: 0, scale: 0 },
-    { delay: 1, opacity: 1, scale: 1,
-        ease: Back.easeOut}); // Tweenmax has options
+//   $(window).resize(function() {
+//     var wheight = $(window).height(); //get height of the window
+//     $('.fullheight').css('height', wheight);
+//   }); //on resize
 
-  var scene = new ScrollScene({
-    triggerElement: '#grp-photo',
-    //offset: -topoffset-1
-  }).setTween(quotetween)
-    .addTo(controller);
+//   console.log(wheight);
 
-}); //on load
+// //set up ScrollMagic
+//   var controller = new ScrollMagic({
+//     globalSceneOptions: {
+//       triggerHook: "onLeave"  // see ScrollMagic doc
+//     }
+//   });
+
+//   //Student quote animations
+//   											//  control element by blockquote element
+//   var quotetween = TweenMax.staggerFromTo('#grp-photo content blockquote', 1, 
+//   	{ opacity: 0, scale: 0 },
+//     { delay: 1, opacity: 1, scale: 1,
+//         ease: Back.easeOut}); // Tweenmax has options
+
+//   var scene = new ScrollScene({
+//     triggerElement: '#grp-photo',
+//     //offset: -topoffset-1
+//   }).setTween(quotetween)
+//     .addTo(controller);
+
+// }); //on load
 

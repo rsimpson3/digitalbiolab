@@ -39,17 +39,23 @@
     </div> 
         <section class="fullheight" id="grp-photo">
             <div class="content">
-                <blockquote>I loved my tutor. She was extremely helpful, thoughtful, and considerate. Each time I needed help, she was there. Even when she saw me struggling and I did not say anything, she offered to help with a smile. </blockquote>
+                <blockquote id="q1" class="mx-auto">I loved my tutor. She was extremely helpful, thoughtful, and considerate. Each time I needed help, she was there. Even when she saw me struggling and I did not say anything, she offered to help with a smile. </blockquote>
                 {{-- <blockquote>Having a lab where we followed the steps and then another lab that we would create ourselves was extremely helpful. It helped me analyze data and create graphs.</blockquote>
                 <blockquote>I really enjoyed the group sessions and talks we had to clarify things I didn't know. The fact that we could ask questions at any point made me feel comfortable with being unsure.</blockquote> --}}
             </div>
         </section>
+
+        <div id="containerTest">
+          <div id="block">
+            Hi there !
+          </div>
+        </div>
         
     <div class="container">
         <aside>
             <h1 class="headline text-uppercase">What do students think?</h1>
             <p> 
-            <figure class="figure float-left"> <img class="figure-img img-fluid rounded gap-right" src="images/main/tweets_ap_bio_blurred_500px.jpg" alt="3 student tweets on apbiology"> <figcaption class="figure-caption">Social media provides formative assessment opportunities. </figcaption> </figure>Social media provides insight into how today's students react and respond to rigorous science coursework. A sampling of student tweets captured in September 2013 illustrate a wide range of opinions. Over 70% of the tweets generated during one day were negative in nature. Performing a keyword search of social media channels such as Twitter using "apbiology" can be used as a formative assessment tool. The Digital BioLab app plans to incorporate these alternate, student-driven forms of response. 
+            <figure class="figure float-left"> <img class="figure-img img-fluid rounded gap-right q2" src="images/main/tweets_ap_bio_blurred_500px.jpg" alt="3 student tweets on apbiology"> <figcaption class="figure-caption">Social media provides formative assessment opportunities. </figcaption> </figure>Social media provides insight into how today's students react and respond to rigorous science coursework. A sampling of student tweets captured in September 2013 illustrate a wide range of opinions. Over 70% of the tweets generated during one day were negative in nature. Performing a keyword search of social media channels such as Twitter using "apbiology" can be used as a formative assessment tool. The Digital BioLab app plans to incorporate these alternate, student-driven forms of response. 
             </p>
         </aside>
     </div>

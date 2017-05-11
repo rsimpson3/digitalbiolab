@@ -7,9 +7,9 @@
     </title>
     <meta charset='utf-8'>
     <link href='/css/app.css' type='text/css' rel='stylesheet'/>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.1/js/tether.min.js"></script>
 
+    
     {{-- Yield any page specific CSS files or anything else you might want in the head --}}
     @yield('head')
     
@@ -35,6 +35,10 @@
         <a href="https://www.pinterest.com/neotech03/hinton-scholars-ap-biology" alt='Hinton Pinterest Board'><i class="fa fa-pinterest-square" aria-hidden="true"></i></a> 
         </p>
     </footer>
+
+    {{-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 
     <script src="{{asset('js/app.js')}}" type="text/javascript"></script>
 </body>
