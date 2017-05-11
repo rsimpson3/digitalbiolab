@@ -21,7 +21,7 @@ const app = new Vue({
 
 
 // TEST Tween ScrollMagic Tween Example
-TweenMax.to(".q2", 6, {left:600});
+TweenMax.to(".q2", 6, {left:700});
 
 // $(function() {
 //   var controller = new ScrollMagic.Controller();

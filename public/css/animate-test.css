@@ -1,7 +1,12 @@
 html, body {
 	height: 100%;
-	margin: 0;
-	padding: 0;
+	width: 80%;
+	margin: 20;
+	padding: 20;
+}
+
+.container {
+	padding: 20px;
 }
 
 #toplogo {
@@ -12,6 +17,12 @@ html, body {
 	position: absolute;
 	width: 100px;
 	height: 100px;
+}
+
+#down-arrow {
+	text-align: center;
+	font-size: 5em;
+	width: 100%;
 }
 
 #container {

@@ -1,5 +1,5 @@
 /*** First Test   ***/
-TweenMax.to(".logo", 6, {left:600});
+TweenMax.to(".logo", 6, {left:400});
 
 /*** Second Test   ***/
 $(function() {
