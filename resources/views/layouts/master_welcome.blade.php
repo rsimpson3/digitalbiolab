@@ -7,11 +7,8 @@
     </title>
     <meta charset='utf-8'>
     <link href='/css/app.css' type='text/css' rel='stylesheet'>
-    {{-- <link href='/css/bootstrap.min.css' type='text/css' rel='stylesheet'> --}}
-    
    
 </head>
-
 
 <body>
 	<div class="container main-header">
@@ -21,7 +18,7 @@
 					<div > 
 						<h1 class="display-4">The Digital Biolab</h1> 
 					</div>
-					<h2> Build and manage your AP<sup>®</sup> Biology Knowledge</h2>
+					<h2> Build and Manage Your Biology Knowledge</h2>
 
 				</div>
 			</article>
@@ -72,12 +69,12 @@
 			   	<!-- Big Ideas Viewer-->
 		  		<div class="col-6" id="intro">
 			    		<article class="heading">
-			    			<h1> My Understanding of Biology Standards </h1>
+			    			<h1 class="headline"> My Understanding of Biology Standards </h1>
 			    			<p> Use the interactive biology standards viewer to see the relationship of the four major Big Ideas grouped by <em>Enduring Understandings</em>. Under each Enduring Understanding are sub groups containing <em>Essential Knowledge Statements</em>. Each statement is preceeded by an assessment tile indicating your level of understanding. Tiles are white by default. Tiles become darker in color and borders become thicker as you demonstrate your understanding.  
 							</p>
 						</article> 
 
-						<article id="udsheader">
+						<article id="udsheader-1">
 							@include('partials.understandings')
 						</article>
 
@@ -89,6 +86,6 @@
 		 <footer>
 	        <p>©2017 Robert Simpson • Digital BioLab Prototype • Harvard Medical School • DGMD E599 • ver4 </p>
 	    </footer>
-		{{-- <script src="{{asset('js/jquery.slim.min.js')}}" type="text/javascript"></script> --}}
+		
 </body>
 </html>

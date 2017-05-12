@@ -93,9 +93,20 @@ header {
 
 /* Standards Viewer */
 
-.udsheader-1 {
-	background-color: $color-1;
+#intro article {
+	
+	p {
+		font-size: 0.8em;
+	}
 }
+
+#udsheader-1 h1 {
+	font-size: 1.5em;
+	font-weight: $bold;
+	background-color: $color-1;
+	padding: 10px;
+}
+
 
 .udsheader-2 {
 	background-color: $color-2;
