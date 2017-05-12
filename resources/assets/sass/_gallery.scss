@@ -1,26 +1,29 @@
 /* Image Gallery - ericportis.com*/
 
-figure { margin: 0; }
-
-figure img { 
-	display: block; width: 100%; 
-}
+// Style only Lab Data gallery 1 
 
 .gallery-1 {
 	margin: 12px;
 	padding: 6px;
-}
-.gallery-1 h1 { 
+
+	figure { 
+		margin: 0;
+		padding: 1em; 
+	 }
+
+	figure img { 
+	display: block; width: 100%; 
+	}
+
+	h1 { 
 	font-family: asap, sans-serif; 
 	margin: 0.125em; 
 	font-size: 2em;
 	margin: 0.5em; 
 	text-align: center; 
-}
-figure { 
-	padding: 1px; 
-}
-figcaption { 
+	}
+
+	figcaption { 
 	display: block;
 	margin: 0;
 	text-align: center;
@@ -31,6 +34,7 @@ figcaption {
 	text-shadow: 1px 1px 1px #000; 
 	height: 0; padding: 0; 
 	font-size: 1.125em; 
+	}
 }
 
 /* Style Gallery 2 using Sachin jQuery plugin */

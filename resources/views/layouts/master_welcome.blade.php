@@ -5,8 +5,11 @@
         {{-- Yield the title if it exists, otherwise default to 'The Digital Biolab' --}}
         @yield('title','The Digital Biolab')
     </title>
-    <link href='/css/app.css' type='text/css' rel='stylesheet'>
     <meta charset='utf-8'>
+    <link href='/css/app.css' type='text/css' rel='stylesheet'>
+    {{-- <link href='/css/bootstrap.min.css' type='text/css' rel='stylesheet'> --}}
+    
+   
 </head>
 
 
@@ -64,6 +67,8 @@
 					    	</section>
 					    </div> <!-- row Big Ideas-->
 					</div> 
+
+
 			   	<!-- Big Ideas Viewer-->
 		  		<div class="col-6" id="intro">
 			    		<article class="heading">
@@ -71,36 +76,11 @@
 			    			<p> Use the interactive biology standards viewer to see the relationship of the four major Big Ideas grouped by <em>Enduring Understandings</em>. Under each Enduring Understanding are sub groups containing <em>Essential Knowledge Statements</em>. Each statement is preceeded by an assessment tile indicating your level of understanding. Tiles are white by default. Tiles become darker in color and borders become thicker as you demonstrate your understanding.  
 							</p>
 						</article> 
+
 						<article id="udsheader">
-							<section id="bi-1-ud">
-								<h1>1 Enduring Understandings</h1>
-								<ul>
-									<li >A. Change in the genetic makeup of a population over time is evolution.</li>
-									<ul id="bi-1-ud-a">
-										<li>Natural selection is a major mechanism of evolution.</li>
-										<li>Natural selection acts on phenotypic variations in populations.</li>
-										<li>Evolutionary change is also driven by random processes.</li>
-										<li>Biological evolution is supported by scientific evidence from many disciplines, including mathematics.</li>
-									</ul>
-									<li>B. Organisms are linked by lines of descent from common ancestry.</li>
-										<ul id="bi-1-ud-b">
-											<li>Organisms share many conserved core processes and features that evolved and are widely distributed among organisms today.</li>
-											<li>Phylogenetic trees and cladograms are graphical representations (models) of evolutionary history that can be tested.</li>
-										</ul>
-									<li>C. Life continues to evolve within a changing environment.</li>
-										<ul id="bi-1-ud-c">
-											<li>Speciation and extinction have occurred throughout the Earth’s history.</li>
-											<li>Speciation may occur when two populations become reproductively isolated from each other.</li>
-											<li>Populations of organisms continue to evolve.</li>
-										</ul>
-									<li>D. The origin of living systems is explained by natural processes.</li>
-										<ul id="bi-1-ud-d">
-											<li>There are several hypotheses about the natural origin of life on Earth, each with supporting scientific evidence.</li>
-											<li>Scientific evidence from many different disciplines supports models of the origin of life.</li>
-										</ul>
-								</ul>
-							</section>
+							@include('partials.understandings')
 						</article>
+
 					</div> <!-- introduction -->
 				</div> <!-- main row container -->
 			</div> <!-- main container -->
@@ -109,6 +89,6 @@
 		 <footer>
 	        <p>©2017 Robert Simpson • Digital BioLab Prototype • Harvard Medical School • DGMD E599 • ver4 </p>
 	    </footer>
-	
+		{{-- <script src="{{asset('js/jquery.slim.min.js')}}" type="text/javascript"></script> --}}
 </body>
 </html>

@@ -90,16 +90,8 @@ header {
 	}
 }
 
+
 /* Standards Viewer */
-
-.row h1{
-	font-size: 1.3em;
-
-}
-
-article p {
-	font-size: 0.8em;
-}
 
 .udsheader-1 {
 	background-color: $color-1;
@@ -116,32 +108,6 @@ article p {
 .udsheader-4 {
 	background-color: $color-4;
 }
-
-.row-2 {
-	//float: left;
-	@include border-radius(10px); 
-	border: 2px solid brown;
-}
-
-.row-2 > ul > li {               //selects only Enduring Understandings
-	@include border-radius-top(10px, 10px); 
-	padding: 0.5em;
-	margin: 0;
-	font-size: 1.2em;
-	font-weight: 700;
-	font-family: asap, sans-serif;
-}
-
-.row-2 ul {
-	list-style: none;
-	padding-left: 0px;      // removes indented margin from list
-	margin-left: 0;
-	* li {     						//Essential Knowledge statements
-		padding: 0.5em;
-		background-color: #c7b299;
-	}
-}
-
 
 /* Circle shapes - Enduring Understandings */
 

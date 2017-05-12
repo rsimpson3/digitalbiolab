@@ -24,8 +24,11 @@
 
 
 // Laracasts > Jeffrey Way example
-@import "blog";     // works with bootstrap 4 alpha6
-@import "styles-start";// Override Bootstrap 4 styles
-@import "about"  //styling for about page
+@import "blog";         // works with bootstrap 4 alpha6
+
+// Digital BioLab Custom Styles
+@import "styles-start"; // Override Bootstrap 4 styles
+@import "about";        // Styling for about page
+@import "gallery"       // Labs gallery 1 styles
 
 

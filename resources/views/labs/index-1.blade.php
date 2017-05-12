@@ -14,7 +14,7 @@
 		<main class="gallery-1">
 			<h1>Digital BioLab Students </h1>
 			<div class="row ">
-				<div class="col-6-sm">
+				{{-- <div class="col-6-sm"> --}}
 					<figure>
 					<img srcset="images/main/digital_biolab-1_320px.jpg 320w, 
 					images/main/digital_biolab-1_640px.jpg 640w,
@@ -39,8 +39,8 @@
 					src="images/main/digital_biolab-3_320px.jpg" alt="Student uses digital microscopy setup with tablet in biology lab." />
 					<figcaption>Digital microscopy</figcaption>
 					</figure>
-				</div>
-				<div class="col-6-sm">
+				{{-- </div> --}}
+				{{-- <div class="col-6-sm"> --}}
 					<figure>
 					<img srcset="images/main/digital_biolab-4_320px.jpg 320w, 
 					images/main/digital_biolab-4_640px.jpg 640w,
@@ -65,7 +65,7 @@
 					src="images/main/digital_biolab-6_320px.jpg" alt="Assess student understanding" />
 					<figcaption>Assess student understanding</figcaption>
 					</figure>
-				</div>
+				{{-- </div> --}}
 			</div>
 		</main>	
 	</div>
