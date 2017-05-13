@@ -77,21 +77,15 @@ article #postit {
 	//display: inline-block;
     @include backImage('../images/main/digital_blab_orientation_grp_poster_1280px.jpg');
 
-    .content blockquote {
-    	width: 200px;
-    	@include border-radius(10px);
-    	background: rgba($light, .8);
-    	padding: 15px;
-    } // blockquote
 } // grp-photo
 
-/*** ScrollMagic Test    ***/
+
 #q1 {
-	//color: red;
-	//font-size: 0.6em;
-	//position: fixed;
 	width: 200px;
-}
+	@include border-radius(10px);
+	background: rgba($light, .8);
+	padding: 15px;   
+} // blockquote
 
 #container-test {
 	margin: 55vh 0;

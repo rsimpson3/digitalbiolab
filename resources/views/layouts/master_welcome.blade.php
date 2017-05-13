@@ -77,9 +77,22 @@
 							</p>
 						</article> 
 
-						<article id="udsheader-1">
-							@include('partials.understandings')
+						<article id="bigidea1-standards">
+							@include('partials.bigidea1')
 						</article>
+							
+						<article id="bigidea2-standards">
+							@include('partials.bigidea2')
+						</article>
+
+						<article id="bigidea3-standards">
+							@include('partials.bigidea3')
+						</article>
+
+						<article id="bigidea4-standards">
+							@include('partials.bigidea4')
+						</article>
+
 
 					</div> <!-- introduction -->
 				</div> <!-- main row container -->
@@ -90,5 +103,6 @@
 	        <p>©2017 Robert Simpson • Digital BioLab Prototype • Harvard Medical School • DGMD E599 • ver4 </p>
 	    </footer>
 		<script src="{{asset('js/app.js')}}" type="text/javascript"></script>
+		<script src='js/bigideas.js' type="text/javascript"></script>
 </body>
 </html>

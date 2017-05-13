@@ -1,6 +1,5 @@
 {{-- AP Biology Understandings & EK Statements --}}
-<section>
-	
+{{-- Big Idea 1 --}}
 <div class="container">
   <h1> 1 Enduring Understandings </h1>
   <div id="ed1accordion" role="tablist" aria-multiselectable="true">
@@ -90,5 +89,3 @@
 
   </div> <!-- accordion -->
 </div><!-- content container -->
-	
-</section>

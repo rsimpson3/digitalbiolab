@@ -11,20 +11,20 @@ require('./bootstrap');
 // TEST Tween ScrollMagic Tween Example
 TweenMax.to(".q2", 6, {left:700});
 
-// $(function() {
-//   var controller = new ScrollMagic.Controller();
+$(function() {
+  var controller = new ScrollMagic.Controller();
 
-//   var blockTween = new TweenMax.to('#block', 1.5, {
-//     backgroundColor: 'red'
-//   });
+  var blockTween = new TweenMax.to('#block', 1.5, {
+    backgroundColor: 'red'
+  });
 
-//   var containerScene = new ScrollMagic.Scene({
-//       triggerElement: '#containerTest'
-//     })
-//     .setTween(blockTween)
-//     .addIndicators()
-//     .addTo(controller);
-// });
+  var containerScene = new ScrollMagic.Scene({
+      triggerElement: '#containerTest'
+    })
+    .setTween(blockTween)
+    //.addIndicators()
+    .addTo(controller);
+});
 
 // $(function() {
 

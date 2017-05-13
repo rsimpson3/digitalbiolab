@@ -100,25 +100,39 @@ header {
 	}
 }
 
-#udsheader-1e h1 {
+#bigidea1-standards h1 {
 	font-size: 1.5em;
 	font-weight: $bold;
 	background-color: $color-1;
 	padding: 10px;
 }
 
-
-.udsheader-2 {
+#bigidea2-standards h1 {
+	font-size: 1.5em;
+	font-weight: $bold;
 	background-color: $color-2;
+	padding: 10px;
 }
 
-.udsheader-3 {
+#bigidea3-standards h1 {
+	font-size: 1.5em;
+	font-weight: $bold;
 	background-color: $color-3;
+	padding: 10px;
 }
 
-.udsheader-4 {
+#bigidea4-standards h1 {
+	font-size: 1.5em;
+	font-weight: $bold;
 	background-color: $color-4;
+	padding: 10px;
 }
+
+// #bigidea1-standards {
+// 	.container {
+// 		display: none;
+// 	}
+// }
 
 /* Circle shapes - Enduring Understandings */
 
