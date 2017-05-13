@@ -35,6 +35,26 @@
         </p>
     </footer>
 
+    <!-- jQuery Gallery Plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/lightgallery.js"></script>
+    <script type="text/javascript" src="js/lg-thumbnail.js"></script>
+    <script type="text/javascript" src="js/lg-fullscreen.min.js"></script>
+    <script type="text/javascript" src="js/lg-video.min.js"></script>
+    <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
     <script src="{{asset('js/app.js')}}" type="text/javascript"></script>
+    <script type="text/javascript">
+        // $('#srcset').lightGallery(); 
+        $(document).ready(function() {
+            $("#srcset").lightGallery({
+                hideControlOnEnd:true,
+                mode: 'lg-fade',
+                //loadVimeoThumbnail: true,
+                // vimeoThumbSize:'thumbnail_small',
+                //desc:true,
+                //caption:true,
+                });
+            });
+    </script>
 </body>
 </html>

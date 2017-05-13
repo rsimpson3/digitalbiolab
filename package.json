@@ -16,7 +16,6 @@
     "laravel-mix": "^0.8.3",
     "lodash": "^4.17.4",
     "node-sass": "^4.5.2",
-    "vue": "^2.1.10",
     "babel": {
       "presets": [
         "es2015"
