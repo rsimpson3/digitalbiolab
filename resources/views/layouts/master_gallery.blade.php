@@ -28,13 +28,8 @@
     	{{-- Yield any page main page content --}}
     	@yield('content')
 
+    @include('partials/footer')
     
- 	<footer>
-        <p>©2017 Robert Simpson • Digital BioLab Prototype • Harvard Medical School • DGMD E599 • ver4 
-        <a href="https://www.pinterest.com/neotech03/hinton-scholars-ap-biology" alt='Hinton Pinterest Board'><i class="fa fa-pinterest-square" aria-hidden="true"></i></a> 
-        </p>
-    </footer>
-
     <!-- jQuery Gallery Plugin -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/lightgallery.js"></script>
