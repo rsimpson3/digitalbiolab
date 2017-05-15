@@ -2,9 +2,9 @@
   <div class="container">
     <nav class="blog-nav">
       <a class="blog-nav-item active" href="#">Home</a>
-      <a class="blog-nav-item" href="#">New features</a>
-      <a class="blog-nav-item" href="#">Press</a>
-      <a class="blog-nav-item" href="#">New hires</a>
+      <a class="blog-nav-item" href="/about">About</a>
+      <a class="blog-nav-item" href="/">Big Ideas</a>
+      <a class="blog-nav-item" href="/gallery-2">Lab Data</a>
       
       {{-- check if user signed in, if true show name --}}
       @if (Auth::check())

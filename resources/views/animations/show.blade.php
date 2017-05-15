@@ -13,7 +13,7 @@
 		<p>A bit on how this works: Animations use jQuery, TweenMax and ScrollMagic libraries. TweenMax and ScrollMagic are dependent on jQuery. The ScrollMagic plug-in (animation.gsap.js) is required to control TweenMax and ScrollMagic behaviors.</p>
 
 		<h2>Icon Image Animation</h2>
-		<p>Upon page load icon moves from right to left.</p>
+		<p>Upon page load icon moves from left to right.</p>
 		<div id="toplogo">
 			<img class="logo" src="images/main/hinton_icon_online.jpg">
 		</div>

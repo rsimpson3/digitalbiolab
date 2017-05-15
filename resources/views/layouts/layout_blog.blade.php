@@ -64,7 +64,7 @@
 
     </div> <!-- /container -->
 
-    @include ('partials.footer')
+    @include ('partials.footer_blog')
 
   </body>
 </html>

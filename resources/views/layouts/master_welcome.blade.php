@@ -34,6 +34,7 @@
 				<li class="nav-item"><a  class="nav-link" href="http://digitalbiolab.businesscatalyst.com/inquiry.html"><span>Inquiry</span></a></li>
 				<li class="nav-item"><a  class="nav-link" href="/gallery-1"><span>Lab Data 1</span></a></li>
 				<li class="nav-item"><a  class="nav-link" href="/gallery-2"><span>Lab Data 2</span></a></li>
+				<li class="nav-item"><a  class="nav-link" href="/post"><span>Blog</span></a></li>
 				<li class="nav-item"><a  class="nav-link" href="/login"><span>Login</span></a></li>
 			</ul>
 		</header> 
@@ -99,9 +100,8 @@
 			</div> <!-- main container -->
 	    </main>
 		
-		 <footer>
-	        <p>©2017 Robert Simpson • Digital BioLab Prototype • Harvard Medical School • DGMD E599 • ver4 </p>
-	    </footer>
+		@include ('partials.footer')
+		
 		<script src="{{asset('js/app.js')}}" type="text/javascript"></script>
 		<script src='js/bigideas.js' type="text/javascript"></script>
 </body>
